@@ -28,13 +28,29 @@
 body{
     background-color: var(--secondaryColor);
     margin: 0.5rem 1rem;
+    height: 100vh;
 }
 
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-.search{
+.search-bar{
+    position: relative;
+}
+
+.search-bar input{
+    border: 2px solid white;
+}
+
+.search-bar button{
+    height: 19.2px;
+    aspect-ratio: 1;
+    position: absolute;
+    right: 0;
+    border: 1px solid white;
+    
 }
