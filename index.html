@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap and boostrap icon-->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
@@ -20,27 +21,98 @@
     ></script>
     <link rel="stylesheet" href="./asset/style.css" />
     <script src="./asset/script.js" defer></script>
+
     <title>FreashCart Groceries</title>
   </head>
+
   <body>
     <!-- header - logo, search and shop icon along with hero -->
     <header>
-      <div class="logo">FreashCart</div>
+      <div class="container">
+        <div class="logo">FreashCart</div>
 
-      <div class="search-bar">
-        <input type="text" placeholder="Search..." />
-        <button><i class="bi bi-search"></i></button>
-      </div>
+        <div class="search-bar">
+          <input type="text" placeholder="Search..." />
+          <button><i class="bi bi-search"></i></button>
+        </div>
 
-      <div class="shopIcon">
-        <i class="bi bi-heart"></i>
-        <i class="bi bi-cart"></i>
+        <div class="shopIcon">
+          <i class="bi bi-heart" style="font-size: 18px"></i>
+          <i class="bi bi-cart" style="font-size: 18px"></i>
+        </div>
       </div>
     </header>
 
+    <div class="hero">
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./asset/img/slideimg.png"
+              class="d-block w-100 h-50"
+              alt="slideimg"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./asset/img/slideimg.png"
+              class="d-block w-100 h-50"
+              alt="slideimg"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./asset/img/slideimg.png"
+              class="d-block w-100 h-50"
+              alt="slideimg"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
     <!-- Navbar (desktop and mobile) -  -->
     <main>
-      <section class="container" id="categories">categories</section>
+      <section class="container categories" id="categories">
+        <div class="category-box">
+          <img src="./asset/img/carrot.png" alt="" width="40px" />
+          <p>Veg</p>
+        </div>
+        <div class="category-box">
+          <img src="./asset/img/fruits.png" alt="" width="40px" />
+          <p>Fruit</p>
+        </div>
+        <div class="category-box">
+          <img src="./asset/img/milk.png" alt="" width="40px" />
+          <p>Milks</p>
+        </div>
+        <div class="category-box">
+          <img src="./asset/img/drink.png" alt="" width="40px" />
+          <p>Drinks</p>
+        </div>
+        <div class="category-box">
+          <img src="./asset/img/coffee.png" alt="" width="40px" />
+          <p>Coffee</p>
+        </div>
+      </section>
       <section class="container" id="offers">offers</section>
       <section class="container" id="reviews">reviews</section>
       <section class="container" id="products">products</section>

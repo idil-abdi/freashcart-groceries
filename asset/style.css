@@ -16,7 +16,6 @@
     --h1: 40px;
     --h2: 32px;
     --paragraph: 16px;
-
 }
 
 *{
@@ -27,30 +26,57 @@
 
 body{
     background-color: var(--secondaryColor);
-    margin: 0.5rem 1rem;
     height: 100vh;
 }
 
 header{
+    background-color: var(--primaryTwo);
+}
+
+header .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    padding: 0.5rem;
 }
 
 .search-bar{
     position: relative;
+    
 }
 
 .search-bar input{
     border: 2px solid white;
+    padding: 3px 5px;
+    border-radius: 0.5rem;
 }
 
 .search-bar button{
-    height: 19.2px;
+    height: 33.2px;
     aspect-ratio: 1;
     position: absolute;
     right: 0;
     border: 1px solid white;
-    
+    border-radius:0 0.5rem 0.5rem 0 ;
+    background-color: var(--primaryTwo);
+}
+
+.categories{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.category-box{
+    align-self: center;
+    border: 1px solid var(--primaryOne);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.category-box p{
+    margin: 0;
 }
